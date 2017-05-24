@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D03BB293532228BD8C67E3 /* Pods_Ameren_EV_HubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */; };
 		1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050881ED5E11300F906F7 /* AppDelegate.swift */; };
 		1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70508A1ED5E11300F906F7 /* ViewController.swift */; };
 		1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D70508C1ED5E11300F906F7 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */; };
 		1D70509E1ED5E11400F906F7 /* Ameren_EV_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70509D1ED5E11400F906F7 /* Ameren_EV_HubTests.swift */; };
 		1D7050A91ED5E11400F906F7 /* Ameren_EV_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */; };
+		492FE85A7DD2B7C41A8B167E /* Pods_Ameren_EV_Hub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */; };
+		8EC5815235B51CDD74B6E190 /* Pods_Ameren_EV_HubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9DD9188B9D65880BF4FE2A /* Pods_Ameren_EV_HubTests.framework */; };
+		FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */; };
+		FB0AF7D21ED5E85400884FCA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FB0AF7D11ED5E85400884FCA /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV Hub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.release.xcconfig"; sourceTree = "<group>"; };
 		1D7050851ED5E11300F906F7 /* Ameren EV Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ameren EV Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050881ED5E11300F906F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D70508A1ED5E11300F906F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 		1D7050A41ED5E11400F906F7 /* Ameren EV HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ameren EV HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ameren_EV_HubUITests.swift; sourceTree = "<group>"; };
 		1D7050AA1ED5E11400F906F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EFE9D63EF4FA2A886AC6D2 /* Pods-Ameren EV HubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC0091B5A9063F358D12106 /* Pods-Ameren EV HubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_HubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE80F5CD60B76DC601FCFB4 /* Pods-Ameren EV Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV Hub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.debug.xcconfig"; sourceTree = "<group>"; };
+		CF9DD9188B9D65880BF4FE2A /* Pods_Ameren_EV_HubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_HubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71A9BFE1C52449BD076C6E7 /* Pods-Ameren EV HubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0EB800D7203DF2FC52E4142 /* Pods-Ameren EV HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB0AF7D11ED5E85400884FCA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492FE85A7DD2B7C41A8B167E /* Pods_Ameren_EV_Hub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC5815235B51CDD74B6E190 /* Pods_Ameren_EV_HubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +86,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D03BB293532228BD8C67E3 /* Pods_Ameren_EV_HubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0CDF2EF03C7D1253D4F9EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE80F5CD60B76DC601FCFB4 /* Pods-Ameren EV Hub.debug.xcconfig */,
+				0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */,
+				27EFE9D63EF4FA2A886AC6D2 /* Pods-Ameren EV HubTests.debug.xcconfig */,
+				E71A9BFE1C52449BD076C6E7 /* Pods-Ameren EV HubTests.release.xcconfig */,
+				F0EB800D7203DF2FC52E4142 /* Pods-Ameren EV HubUITests.debug.xcconfig */,
+				4DC0091B5A9063F358D12106 /* Pods-Ameren EV HubUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0E4958FDC06A837FB1961873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */,
+				CF9DD9188B9D65880BF4FE2A /* Pods_Ameren_EV_HubTests.framework */,
+				927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1D70507C1ED5E11300F906F7 = {
 			isa = PBXGroup;
 			children = (
+				FB0AF7D11ED5E85400884FCA /* Podfile */,
 				1D7050871ED5E11300F906F7 /* Ameren EV Hub */,
 				1D70509C1ED5E11400F906F7 /* Ameren EV HubTests */,
 				1D7050A71ED5E11400F906F7 /* Ameren EV HubUITests */,
 				1D7050861ED5E11300F906F7 /* Products */,
+				0C0CDF2EF03C7D1253D4F9EF /* Pods */,
+				0E4958FDC06A837FB1961873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +142,7 @@
 		1D7050871ED5E11300F906F7 /* Ameren EV Hub */ = {
 			isa = PBXGroup;
 			children = (
+				FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */,
 				1D7050881ED5E11300F906F7 /* AppDelegate.swift */,
 				1D70508A1ED5E11300F906F7 /* ViewController.swift */,
 				1D70508C1ED5E11300F906F7 /* Main.storyboard */,
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D7050AD1ED5E11400F906F7 /* Build configuration list for PBXNativeTarget "Ameren EV Hub" */;
 			buildPhases = (
+				54DF9536187A0545B1E86CB4 /* [CP] Check Pods Manifest.lock */,
 				1D7050811ED5E11300F906F7 /* Sources */,
 				1D7050821ED5E11300F906F7 /* Frameworks */,
 				1D7050831ED5E11300F906F7 /* Resources */,
+				2CC31FDC57CC022BA56A107A /* [CP] Embed Pods Frameworks */,
+				B34F15B4F661F9EA13DE92E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D7050B01ED5E11400F906F7 /* Build configuration list for PBXNativeTarget "Ameren EV HubTests" */;
 			buildPhases = (
+				BFFF210317CC28BF04CDC7F7 /* [CP] Check Pods Manifest.lock */,
 				1D7050951ED5E11400F906F7 /* Sources */,
 				1D7050961ED5E11400F906F7 /* Frameworks */,
 				1D7050971ED5E11400F906F7 /* Resources */,
+				1F9A154710563D6048D5B3E1 /* [CP] Embed Pods Frameworks */,
+				684C6DD982AECC0FA0C48549 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D7050B31ED5E11400F906F7 /* Build configuration list for PBXNativeTarget "Ameren EV HubUITests" */;
 			buildPhases = (
+				A33ABB8270D452A2D1466E21 /* [CP] Check Pods Manifest.lock */,
 				1D7050A01ED5E11400F906F7 /* Sources */,
 				1D7050A11ED5E11400F906F7 /* Frameworks */,
 				1D7050A21ED5E11400F906F7 /* Resources */,
+				0704B094127C4B74DA22F340 /* [CP] Embed Pods Frameworks */,
+				D4B3BF52DB87E742E95B4FC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0AF7D21ED5E85400884FCA /* Podfile in Resources */,
 				1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */,
+				FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */,
 				1D7050901ED5E11300F906F7 /* Assets.xcassets in Resources */,
 				1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +313,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0704B094127C4B74DA22F340 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F9A154710563D6048D5B3E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC31FDC57CC022BA56A107A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54DF9536187A0545B1E86CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		684C6DD982AECC0FA0C48549 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33ABB8270D452A2D1466E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B34F15B4F661F9EA13DE92E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFFF210317CC28BF04CDC7F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B3BF52DB87E742E95B4FC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D7050811ED5E11300F906F7 /* Sources */ = {
@@ -415,6 +610,7 @@
 		};
 		1D7050AE1ED5E11400F906F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE80F5CD60B76DC601FCFB4 /* Pods-Ameren EV Hub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
@@ -428,6 +624,7 @@
 		};
 		1D7050AF1ED5E11400F906F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
@@ -441,6 +638,7 @@
 		};
 		1D7050B11ED5E11400F906F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27EFE9D63EF4FA2A886AC6D2 /* Pods-Ameren EV HubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +654,7 @@
 		};
 		1D7050B21ED5E11400F906F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71A9BFE1C52449BD076C6E7 /* Pods-Ameren EV HubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +670,7 @@
 		};
 		1D7050B41ED5E11400F906F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0EB800D7203DF2FC52E4142 /* Pods-Ameren EV HubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
@@ -485,6 +685,7 @@
 		};
 		1D7050B51ED5E11400F906F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC0091B5A9063F358D12106 /* Pods-Ameren EV HubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
@@ -516,6 +717,7 @@
 				1D7050AF1ED5E11400F906F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D7050B01ED5E11400F906F7 /* Build configuration list for PBXNativeTarget "Ameren EV HubTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +726,7 @@
 				1D7050B21ED5E11400F906F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D7050B31ED5E11400F906F7 /* Build configuration list for PBXNativeTarget "Ameren EV HubUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +735,7 @@
 				1D7050B51ED5E11400F906F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
