@@ -62,7 +62,7 @@
 		E71A9BFE1C52449BD076C6E7 /* Pods-Ameren EV HubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0EB800D7203DF2FC52E4142 /* Pods-Ameren EV HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FB0AF7D11ED5E85400884FCA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FB0AF7D11ED5E85400884FCA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
