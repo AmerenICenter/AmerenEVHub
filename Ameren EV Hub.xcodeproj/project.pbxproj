@@ -19,6 +19,10 @@
 		8EC5815235B51CDD74B6E190 /* Pods_Ameren_EV_HubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9DD9188B9D65880BF4FE2A /* Pods_Ameren_EV_HubTests.framework */; };
 		FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */; };
 		FB0AF7D21ED5E85400884FCA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FB0AF7D11ED5E85400884FCA /* Podfile */; };
+		FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7D71ED6097900884FCA /* ResetPasswordViewController.swift */; };
+		FB0AF7DA1ED6098800884FCA /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */; };
+		FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */; };
+		FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DF1ED886A900884FCA /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		F0EB800D7203DF2FC52E4142 /* Pods-Ameren EV HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB0AF7D11ED5E85400884FCA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FB0AF7D71ED6097900884FCA /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB0AF7DF1ED886A900884FCA /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +153,11 @@
 				FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */,
 				1D7050881ED5E11300F906F7 /* AppDelegate.swift */,
 				1D70508A1ED5E11300F906F7 /* ViewController.swift */,
+				FB0AF7D71ED6097900884FCA /* ResetPasswordViewController.swift */,
+				FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */,
+				FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */,
 				1D70508C1ED5E11300F906F7 /* Main.storyboard */,
+				FB0AF7DF1ED886A900884FCA /* NavViewController.swift */,
 				1D70508F1ED5E11300F906F7 /* Assets.xcassets */,
 				1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */,
 				1D7050941ED5E11300F906F7 /* Info.plist */,
@@ -457,8 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */,
 				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
+				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
+				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,
+				FB0AF7DA1ED6098800884FCA /* CreateUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
