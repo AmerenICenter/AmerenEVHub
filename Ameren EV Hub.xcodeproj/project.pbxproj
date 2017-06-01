@@ -23,6 +23,7 @@
 		FB0AF7DA1ED6098800884FCA /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */; };
 		FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */; };
 		FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DF1ED886A900884FCA /* NavViewController.swift */; };
+		FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB0AF7DF1ED886A900884FCA /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				1D70508F1ED5E11300F906F7 /* Assets.xcassets */,
 				1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */,
 				1D7050941ED5E11300F906F7 /* Info.plist */,
+				FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */,
 			);
 			path = "Ameren EV Hub";
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */,
+				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
 				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,

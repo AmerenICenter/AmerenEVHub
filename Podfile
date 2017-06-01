@@ -8,6 +8,7 @@ target 'Ameren EV Hub' do
   # Pods for Ameren EV Hub
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
   target 'Ameren EV HubTests' do
     inherit! :search_paths
