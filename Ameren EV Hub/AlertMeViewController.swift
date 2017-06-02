@@ -26,7 +26,6 @@ class AlertMeViewController: UIViewController {
     @IBAction func addToAlert(_ sender: Any) {
         if !isInUseFlag && (EVSEForMe.text != "") {
             isInUseFlag = true
-//            refHandle : UInt = 0
             refHandle = self.ref.child("EVApp/EVAppData").child(EVSEForMe.text!).observe(FIRDataEventType.value, with: { snap in
                 let state = String(describing: snap.childSnapshot(forPath: "EVSEState").valueInExportFormat()!)
                 if (state == "4") {
@@ -41,13 +40,12 @@ class AlertMeViewController: UIViewController {
             })
         } else if EVSEForMe.text == "" {
             print("Please enter a valid ID")
-        } else
-        {
+        } else {
             onlyOneCar()
         }
-        
     }
     
+    //  This function removes the observer from the car. 
     
     @IBAction func removeCar(_ sender: Any) {
         if isInUseFlag {
@@ -74,6 +72,9 @@ class AlertMeViewController: UIViewController {
         }
     }
     
+    //  Helper function that presents an alert when the user attempts to register more
+    //  than one charger.
+    
     func onlyOneCar() -> Void {
         let alert = UIAlertController(title: "Warning", message: "You can only register one charger at a time!", preferredStyle: .alert)
         let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -84,14 +85,10 @@ class AlertMeViewController: UIViewController {
     //  Helper function that presents an alert to the user telling them that their car has charged.
     
     func carIsCharged() -> Void {
-        let alert = UIAlertController(title: "Car Charged!", message: "Please move your car out!", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "Car Charged!", message: "Please move your car out!", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
-        isInUseFlag = false
-    }
-    
-    func carIsChargedSMS() -> Void {
         isInUseFlag = false
     }
     

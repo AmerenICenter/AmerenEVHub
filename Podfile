@@ -7,6 +7,7 @@ target 'Ameren EV Hub' do
 
   # Pods for Ameren EV Hub
 pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 

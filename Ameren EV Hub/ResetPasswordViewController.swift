@@ -40,8 +40,8 @@ class ResetPasswordViewController: UIViewController {
     //  Helper function that creates and presents an alert on a successful reset.
     
     func resetWorked() -> Void {
-        let alert = UIAlertController(title: "Reset Succeeded", message: "Check your email to reset your password!", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "Reset Succeeded", message: "Check your email to reset your password!", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
     }
@@ -49,8 +49,8 @@ class ResetPasswordViewController: UIViewController {
     //  Helper function that creates and presents an alert on failure to reset.
     
     func resetFailed() -> Void {
-        let alert = UIAlertController(title: "Reset Failure", message: "Please enter a valid email!", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "Reset Failure", message: "Please enter a valid email!", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
     }

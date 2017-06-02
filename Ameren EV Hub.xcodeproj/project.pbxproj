@@ -24,6 +24,7 @@
 		FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */; };
 		FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DF1ED886A900884FCA /* NavViewController.swift */; };
 		FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */; };
+		FB205DA91EE2043F00708ED2 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB205DA81EE2043F00708ED2 /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB0AF7DF1ED886A900884FCA /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMeViewController.swift; sourceTree = "<group>"; };
+		FB205DA71EE0B54A00708ED2 /* Ameren EV Hub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ameren EV Hub.entitlements"; sourceTree = "<group>"; };
+		FB205DA81EE2043F00708ED2 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 		1D7050871ED5E11300F906F7 /* Ameren EV Hub */ = {
 			isa = PBXGroup;
 			children = (
+				FB205DA71EE0B54A00708ED2 /* Ameren EV Hub.entitlements */,
 				FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */,
 				1D7050881ED5E11300F906F7 /* AppDelegate.swift */,
 				1D70508A1ED5E11300F906F7 /* ViewController.swift */,
@@ -159,6 +163,7 @@
 				FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */,
 				FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */,
 				1D70508C1ED5E11300F906F7 /* Main.storyboard */,
+				FB205DA81EE2043F00708ED2 /* ScrollViewController.swift */,
 				FB0AF7DF1ED886A900884FCA /* NavViewController.swift */,
 				1D70508F1ED5E11300F906F7 /* Assets.xcassets */,
 				1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */,
@@ -265,6 +270,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5JX6H3NBJV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					1D7050981ED5E11400F906F7 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -475,6 +485,7 @@
 				FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */,
 				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
 				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
+				FB205DA91EE2043F00708ED2 /* ScrollViewController.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
 				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,
@@ -633,6 +644,7 @@
 			baseConfigurationReference = CAE80F5CD60B76DC601FCFB4 /* Pods-Ameren EV Hub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ameren EV Hub/Ameren EV Hub.entitlements";
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
 				INFOPLIST_FILE = "Ameren EV Hub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -647,6 +659,7 @@
 			baseConfigurationReference = 0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ameren EV Hub/Ameren EV Hub.entitlements";
 				DEVELOPMENT_TEAM = 5JX6H3NBJV;
 				INFOPLIST_FILE = "Ameren EV Hub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

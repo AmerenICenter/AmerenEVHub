@@ -34,8 +34,8 @@ class LoginViewController: UIViewController {
                 
             } else {
                 //  If there is a problem with logging in, present an error message with an OK button.
-                let alert = UIAlertController(title: "Login Failure", message: "Please enter a valid login!", preferredStyle: UIAlertControllerStyle.actionSheet)
-                let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                let alert = UIAlertController(title: "Login Failure", message: "Please enter a valid login!", preferredStyle: .alert)
+                let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alert.addAction(dismiss)
                 self.present(alert, animated: true, completion: nil)
             }
@@ -48,5 +48,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
     }
+    
 }
 

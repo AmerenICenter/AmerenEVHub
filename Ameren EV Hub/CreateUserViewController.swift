@@ -43,8 +43,8 @@ class CreateUserViewController: UIViewController {
     //  Helper function that creates and presents an alert when user creation has failed.
     
     func createFailed() -> Void {
-        let alert = UIAlertController(title: "User Creation Failure", message: "Please try again!", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "User Creation Failure", message: "Please try again!", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
     }
@@ -52,8 +52,8 @@ class CreateUserViewController: UIViewController {
     //  Helper function that creates and presents an alert when user creation has succeeded.
     
     func createWorked() -> Void {
-        let alert = UIAlertController(title: "Profile Created", message: "You can now log in!", preferredStyle: UIAlertControllerStyle.actionSheet)
-        let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: "Profile Created", message: "You can now log in!", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
     }
