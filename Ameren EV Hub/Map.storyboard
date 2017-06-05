@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sln-SG-PnJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="hMN-Ve-0P1">
+            <objects>
+                <viewController title="Map" id="t4J-v2-1Bx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vap-jd-fEF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z8m-cq-KLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TDh-C8-WaK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simpleNumericParkingLot" translatesAutoresizingMaskIntoConstraints="NO" id="zUT-g6-DUc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zUT-g6-DUc" secondAttribute="trailing" id="6Bm-pp-x3T"/>
+                            <constraint firstItem="zUT-g6-DUc" firstAttribute="top" secondItem="vap-jd-fEF" secondAttribute="bottom" id="aii-0U-r5o"/>
+                            <constraint firstItem="Z8m-cq-KLG" firstAttribute="top" secondItem="zUT-g6-DUc" secondAttribute="bottom" id="mGL-lk-N4d"/>
+                            <constraint firstItem="zUT-g6-DUc" firstAttribute="leading" secondItem="TDh-C8-WaK" secondAttribute="leading" id="nlj-gZ-ohY"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Dx-1R-zbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="222.63868065967017"/>
+        </scene>
+        <!--Satellite Map-->
+        <scene sceneID="ImB-hd-rdC">
+            <objects>
+                <viewController title="Satellite Map" id="sln-SG-PnJ" customClass="ParkingSatelliteViewController" customModule="Ameren_EV_Hub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tDs-La-1HO"/>
+                        <viewControllerLayoutGuide type="bottom" id="wH6-BA-i4f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="78x-Lk-Lfh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-CD-sn2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="sln-SG-PnJ" id="JlI-lt-pRj"/>
+                                    <outletCollection property="gestureRecognizers" destination="hD1-H5-BwO" appends="YES" id="8X0-ar-eIx"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xTe-CD-sn2" secondAttribute="trailing" id="8wx-bw-5D8"/>
+                            <constraint firstItem="xTe-CD-sn2" firstAttribute="leading" secondItem="78x-Lk-Lfh" secondAttribute="leading" id="Qxg-hD-KUr"/>
+                            <constraint firstItem="xTe-CD-sn2" firstAttribute="top" secondItem="tDs-La-1HO" secondAttribute="bottom" id="g81-mj-KBd"/>
+                            <constraint firstItem="wH6-BA-i4f" firstAttribute="top" secondItem="xTe-CD-sn2" secondAttribute="bottom" id="qwy-D4-uQZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="satelliteMapView" destination="xTe-CD-sn2" id="TA3-nD-GF3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgp-1K-acJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="hD1-H5-BwO">
+                    <connections>
+                        <action selector="mapWasPinched:" destination="sln-SG-PnJ" id="wVW-gG-pIt"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="1093.4032983508246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="simpleNumericParkingLot" width="238" height="242"/>
+    </resources>
+</document>
