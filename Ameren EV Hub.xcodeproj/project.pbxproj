@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		05D03BB293532228BD8C67E3 /* Pods_Ameren_EV_HubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */; };
-		1D14D99F1EE73BCD0021665D /* data in Resources */ = {isa = PBXBuildFile; fileRef = 1D14D99B1EE73BCD0021665D /* data */; };
 		1D14D9A01EE73BCD0021665D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D14D99C1EE73BCD0021665D /* Map.storyboard */; };
-		1D14D9A11EE73BCD0021665D /* ParkingSatelliteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */; };
-		1D14D9A21EE73BCD0021665D /* ParkingSpotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */; };
 		1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050881ED5E11300F906F7 /* AppDelegate.swift */; };
-		1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70508A1ED5E11300F906F7 /* ViewController.swift */; };
 		1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D70508C1ED5E11300F906F7 /* Main.storyboard */; };
 		1D7050901ED5E11300F906F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D70508F1ED5E11300F906F7 /* Assets.xcassets */; };
 		1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */; };
 		1D70509E1ED5E11400F906F7 /* Ameren_EV_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70509D1ED5E11400F906F7 /* Ameren_EV_HubTests.swift */; };
 		1D7050A91ED5E11400F906F7 /* Ameren_EV_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */; };
+		1DD441CC1EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD441C81EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib */; };
+		1DD441CD1EE74BE700B39B40 /* ParkingSpotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD441C91EE74BE700B39B40 /* ParkingSpotAnnotation.swift */; };
+		1DD441CE1EE74BE700B39B40 /* ParkingSatelliteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD441CA1EE74BE700B39B40 /* ParkingSatelliteViewController.swift */; };
+		1DD441CF1EE74BE700B39B40 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 1DD441CB1EE74BE700B39B40 /* data */; };
 		492FE85A7DD2B7C41A8B167E /* Pods_Ameren_EV_Hub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */; };
 		8EC5815235B51CDD74B6E190 /* Pods_Ameren_EV_HubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9DD9188B9D65880BF4FE2A /* Pods_Ameren_EV_HubTests.framework */; };
 		FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */; };
@@ -50,13 +50,9 @@
 /* Begin PBXFileReference section */
 		06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV Hub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.release.xcconfig"; sourceTree = "<group>"; };
-		1D14D99B1EE73BCD0021665D /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		1D14D99C1EE73BCD0021665D /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
-		1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSatelliteViewController.swift; sourceTree = "<group>"; };
-		1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpotAnnotation.swift; sourceTree = "<group>"; };
 		1D7050851ED5E11300F906F7 /* Ameren EV Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ameren EV Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050881ED5E11300F906F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D70508A1ED5E11300F906F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D70508D1ED5E11300F906F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D70508F1ED5E11300F906F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7050921ED5E11300F906F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +63,10 @@
 		1D7050A41ED5E11400F906F7 /* Ameren EV HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ameren EV HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ameren_EV_HubUITests.swift; sourceTree = "<group>"; };
 		1D7050AA1ED5E11400F906F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD441C81EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingSpotAnnotationDetailView.xib; sourceTree = "<group>"; };
+		1DD441C91EE74BE700B39B40 /* ParkingSpotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpotAnnotation.swift; sourceTree = "<group>"; };
+		1DD441CA1EE74BE700B39B40 /* ParkingSatelliteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSatelliteViewController.swift; sourceTree = "<group>"; };
+		1DD441CB1EE74BE700B39B40 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		27EFE9D63EF4FA2A886AC6D2 /* Pods-Ameren EV HubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DC0091B5A9063F358D12106 /* Pods-Ameren EV HubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV HubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.release.xcconfig"; sourceTree = "<group>"; };
 		927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_HubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,14 +161,14 @@
 		1D7050871ED5E11300F906F7 /* Ameren EV Hub */ = {
 			isa = PBXGroup;
 			children = (
-				1D14D99B1EE73BCD0021665D /* data */,
+				1DD441C81EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib */,
+				1DD441C91EE74BE700B39B40 /* ParkingSpotAnnotation.swift */,
+				1DD441CA1EE74BE700B39B40 /* ParkingSatelliteViewController.swift */,
+				1DD441CB1EE74BE700B39B40 /* data */,
 				1D14D99C1EE73BCD0021665D /* Map.storyboard */,
-				1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */,
-				1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */,
 				FB205DA71EE0B54A00708ED2 /* Ameren EV Hub.entitlements */,
 				FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */,
 				1D7050881ED5E11300F906F7 /* AppDelegate.swift */,
-				1D70508A1ED5E11300F906F7 /* ViewController.swift */,
 				FB0AF7D71ED6097900884FCA /* ResetPasswordViewController.swift */,
 				FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */,
 				FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */,
@@ -329,8 +329,9 @@
 				1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */,
 				FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */,
 				1D7050901ED5E11300F906F7 /* Assets.xcassets in Resources */,
-				1D14D99F1EE73BCD0021665D /* data in Resources */,
 				1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */,
+				1DD441CF1EE74BE700B39B40 /* data in Resources */,
+				1DD441CC1EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */,
-				1D14D9A11EE73BCD0021665D /* ParkingSatelliteViewController.swift in Sources */,
+				1DD441CE1EE74BE700B39B40 /* ParkingSatelliteViewController.swift in Sources */,
 				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
-				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
-				1D14D9A21EE73BCD0021665D /* ParkingSpotAnnotation.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
+				1DD441CD1EE74BE700B39B40 /* ParkingSpotAnnotation.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
 				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,
 				FB0AF7DA1ED6098800884FCA /* CreateUserViewController.swift in Sources */,

@@ -17,17 +17,17 @@ import FirebaseDatabase
 let PARKING_LOT_JSON_FILENAME = "data/simpleSatelliteParkingLot"
 
 // Latitude longitude of Ameren headquarters
-let AMEREN_HQ_LATITUDE: CLLocationDegrees = 38.622604
-let AMEREN_HQ_LONGITUDE: CLLocationDegrees = -90.209559
-let AMEREN_HQ_LATITUDE_SPAN: CLLocationDegrees = 0.006488 / 2
-let AMEREN_HQ_LONGITUDE_SPAN: CLLocationDegrees = 0.010014 / 2
+let AMEREN_HQ_LATITUDE: CLLocationDegrees = 38.62305
+let AMEREN_HQ_LONGITUDE: CLLocationDegrees = -90.2116
+let AMEREN_HQ_LATITUDE_SPAN: CLLocationDegrees = 0.006488 / 4
+let AMEREN_HQ_LONGITUDE_SPAN: CLLocationDegrees = 0.010014 / 4
 
 // Icon size as a proportion of latitude range
-let ICON_LATITUDE_RATIO: Double = 0.0001
+let ICON_LATITUDE_RATIO: Double = 0.02
 
 // Icon size minimum and maximum
-let ICON_SIZE_MINIMUM: Double = 10
-let ICON_SIZE_MAXIMUM: Double = 50
+let ICON_SIZE_MINIMUM: Double = 5
+let ICON_SIZE_MAXIMUM: Double = 15
 
 // EV tower state codes
 let TOWER_STATE_IDLE = 1
@@ -61,6 +61,9 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // Firebase database reference
     var parkingDatabaseRef: FIRDatabaseReference!
     
+    // Spot data snapshot (updated with current state)
+    var spotData: FIRDataSnapshot?
+    
     // MARK: - Overridden UIViewController Functions
     
     // ----------------------------------------------------------------
@@ -71,18 +74,15 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(1)
         // Define center, span, and range
         defaultCenter = CLLocationCoordinate2D(latitude: AMEREN_HQ_LATITUDE, longitude: AMEREN_HQ_LONGITUDE)
         defaultSpan = MKCoordinateSpan(latitudeDelta: AMEREN_HQ_LATITUDE_SPAN, longitudeDelta: AMEREN_HQ_LONGITUDE_SPAN)
         defaultRegion = MKCoordinateRegion(center: defaultCenter, span: defaultSpan)
         
-        print(2)
         // Set map type to satellite and set region
         satelliteMapView.mapType = MKMapType.hybrid
         satelliteMapView.setRegion(defaultRegion, animated: false)
         
-        print(3)
         // Opens annotation JSON file
         do {
             let parkingLotJSONPath = Bundle.main.path(forResource: PARKING_LOT_JSON_FILENAME, ofType: "json")
@@ -93,20 +93,11 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
             print (error)
         }
 
-        print(4)
-        // Creates an annotation for each spot in JSON object
-        for (idString, coordinates) in spotLocations {
-            let id = Int(idString)
-            let coordinateObject = CLLocationCoordinate2D(latitude: coordinates[0], longitude: coordinates[1])
-            let spotAnnotation = ParkingSpotAnnotation(coordinateObject, spotID: id!)
-            satelliteMapView.addAnnotation(spotAnnotation)
-        }
-        
-        print(5)
         // Queries database for tower states
         parkingDatabaseRef = FIRDatabase.database().reference()
-        parkingDatabaseRef.child("EVApp/EVAppData").observe(FIRDataEventType.childAdded, with: recieveFirebaseData)
+        parkingDatabaseRef.child("EVApp/EVAppData").observe(FIRDataEventType.value, with: recieveFirebaseData)
         
+        refreshAnnotations()
     }
 
     override func didReceiveMemoryWarning() {
@@ -117,6 +108,27 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // MARK: - MKMapViewDelegate Functions
     
     // ----------------------------------------------------------------
+    // mapView:regionWillChangeAnimated: - called right before map view
+    //                                     changes, resizes annotation
+    //                                     views
+    // @param mapView - the current MKMapView
+    // @param regionWillChangeAnimated - if the change is gonna be
+    //                                   animated, which I'm not sure 
+    //                                   what I want to do with
+    // ----------------------------------------------------------------
+
+    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        print(mapView.region.span)
+        let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, ICON_LATITUDE_RATIO / mapView.region.span.latitudeDelta))
+        print(dimension)
+        print(ICON_LATITUDE_RATIO / mapView.region.span.latitudeDelta)
+        let newAnnotationImageViewRect = CGRect(x: dimension / -2, y: dimension / -2, width: dimension, height: dimension)
+        for annotationImageView in annotationImageViews {
+            annotationImageView.frame = newAnnotationImageViewRect
+        }
+    }
+    
+    // ----------------------------------------------------------------
     // mapView:viewFor: - constructs and delivers view for state of
     //                    given parking spot ID annotation
     // @param mapView - the current MKMapView, which I already have
@@ -125,36 +137,27 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // ----------------------------------------------------------------
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
         if let spotAnnotation = annotation as? ParkingSpotAnnotation {
             let annotationView = MKAnnotationView(annotation: spotAnnotation, reuseIdentifier: spotAnnotation.title)
-            let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, satelliteMapView.region.span.latitudeDelta / ICON_LATITUDE_RATIO))
+            // spotAnnotation.addDetailView(annotationView)
+            let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, ICON_LATITUDE_RATIO / satelliteMapView.region.span.latitudeDelta))
             let annotationImageViewRect = CGRect(x: dimension / -2, y: dimension / -2, width: dimension, height: dimension)
             let annotationImageView = UIImageView(frame: annotationImageViewRect)
             annotationImageView.contentMode = UIViewContentMode.scaleAspectFit
-            annotationImageView.image = stateImages[TOWER_STATE_IDLE]
+            if let sd = spotData {
+                print(sd.key)
+                let spotTitle: String = "parkingSpot" + String(spotAnnotation.spotID) + "/EVSEState"
+                print(spotTitle)
+                print((sd.childSnapshot(forPath: spotTitle).value)!)
+                annotationImageView.image = stateImages[sd.childSnapshot(forPath: spotTitle).value as! Int]
+            } else {
+                annotationImageView.image = stateImages[TOWER_STATE_IDLE]
+            }
             annotationImageViews.append(annotationImageView)
             annotationView.addSubview(annotationImageView)
             return annotationView
         } else {
             return nil
-        }
-    }
-    
-    // MARK: - Outlet Functions
-    
-    // ----------------------------------------------------------------
-    // mapWasPinched - triggered when user zooms in or out on map,
-    //                 resizes annotation icon image views accordingly
-    // ----------------------------------------------------------------
-
-    @IBAction func mapWasPinched(_ sender: Any) {
-        print("yes!")
-        let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, satelliteMapView.region.span.latitudeDelta / ICON_LATITUDE_RATIO))
-        print(dimension)
-        let newAnnotationImageViewRect = CGRect(x: dimension / -2, y: dimension / -2, width: dimension, height: dimension)
-        for annotationImageView in annotationImageViews {
-            annotationImageView.frame = newAnnotationImageViewRect
         }
     }
     
@@ -165,7 +168,24 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // ----------------------------------------------------------------
     
     func recieveFirebaseData(_ data: FIRDataSnapshot) -> Void {
-        print (data.valueInExportFormat() ?? "not...found")
+        print("Data recieved")
+        spotData = data
+        refreshAnnotations()
+    }
+    
+    // ----------------------------------------------------------------
+    // refreshAnnotations - resets map view's annotation array with
+    //                      current parking space data
+    // ----------------------------------------------------------------
+    
+    func refreshAnnotations() {
+        satelliteMapView.removeAnnotations(satelliteMapView.annotations)
+        for (idString, coordinates) in spotLocations {
+            let id = Int(idString)
+            let coordinateObject = CLLocationCoordinate2D(latitude: coordinates[0], longitude: coordinates[1])
+            let spotAnnotation = ParkingSpotAnnotation(coordinateObject, spotID: id!)
+            satelliteMapView.addAnnotation(spotAnnotation)
+        }
     }
     
     /*

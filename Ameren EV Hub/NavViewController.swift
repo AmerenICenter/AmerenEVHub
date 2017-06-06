@@ -30,7 +30,7 @@ class NavViewController: UIViewController {
         carTap.addTarget(self, action: #selector(NavViewController.carTapped))
         mapImage.addGestureRecognizer(mapTap)
         carImage.addGestureRecognizer(carTap)
-    }// Do any additional setup after loading the view.
+    }
     
     func mapTapped() -> Void {
         performSegue(withIdentifier: "toMap", sender: nil)
