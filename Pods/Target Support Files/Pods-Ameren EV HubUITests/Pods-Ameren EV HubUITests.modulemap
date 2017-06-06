@@ -1,0 +1,6 @@
+framework module Pods_Ameren_EV_HubUITests {
+  umbrella header "Pods-Ameren EV HubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

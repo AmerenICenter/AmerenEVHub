@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1F2A49FEBDC6DB49ED2831BEC91D30 /* Pods-Ameren EV HubUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F28F916736CF71860373ABA67D818 /* Pods-Ameren EV HubUITests-dummy.m */; };
+		6DB77AA0BD7B7408B1D7774B03EFB6FE /* Pods-Ameren EV HubTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A475A0B7BA11DD27A523F3361FE1D7 /* Pods-Ameren EV HubTests-dummy.m */; };
+		84086CC39F52481FC55F3DA459528AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A4804648CB8CFD9608F9FABD5D9DD4D3 /* Pods-Ameren EV Hub-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11E0D1993ABD7EB9D0873E9FA621BB /* Pods-Ameren EV Hub-dummy.m */; };
+		A90DBEE8D7B0F7F19B02475047FFDC88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AC290BBC2A400C70810B800F7A305141 /* Pods-Ameren EV HubUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02EF77F55C4B0B769E198C412EE3BAC2 /* Pods-Ameren EV HubUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE123AE1AA568D2112B38E09BCE276A2 /* Pods-Ameren EV Hub-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2960D4A8FBD08276578DC26011B7A4A7 /* Pods-Ameren EV Hub-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7AD90FDE38DB78DF830C9CB9A8D81F9 /* Pods-Ameren EV HubTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B29F521ED0647490B0EECA6FBB589A6E /* Pods-Ameren EV HubTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEA3C722868BFC4E788CBD6B45A6CBFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02EF77F55C4B0B769E198C412EE3BAC2 /* Pods-Ameren EV HubUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ameren EV HubUITests-umbrella.h"; sourceTree = "<group>"; };
+		0C35617003A0EAE0D611D445518DE54F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100F28F916736CF71860373ABA67D818 /* Pods-Ameren EV HubUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ameren EV HubUITests-dummy.m"; sourceTree = "<group>"; };
+		1319601C08F7D2D565E701C82D9A81DD /* Pods-Ameren EV HubUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV HubUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1841413C5AE1BC7A0F8C2D0A633AF9A2 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1B0D861ACD81E175C4378A742E0F04F0 /* Pods_Ameren_EV_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ameren_EV_Hub.framework; path = "Pods-Ameren EV Hub.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5F8868A261FC0EE688059B2ABA0146 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		218B02D3E497882678EDC1CA73C3EA54 /* Pods-Ameren EV HubTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Ameren EV HubTests.modulemap"; sourceTree = "<group>"; };
+		2311DD5187300181997D8C3528256388 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		2960D4A8FBD08276578DC26011B7A4A7 /* Pods-Ameren EV Hub-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ameren EV Hub-umbrella.h"; sourceTree = "<group>"; };
+		2ABA745808EA8BCEB7EB36EBBA7214B2 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		3703498807E17DEB8A863B8F0C1E61F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F11E0D1993ABD7EB9D0873E9FA621BB /* Pods-Ameren EV Hub-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ameren EV Hub-dummy.m"; sourceTree = "<group>"; };
+		4C01A46CDF40307239441533FF813E14 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		52B32ADE71A19A202BD799D3E51BE798 /* Pods-Ameren EV HubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV HubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6509F1430A17220A4219DAD8FFAA1A2F /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		652FF48CF16D8F4E6B56F12AC076D2F1 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		657C3B221D5A44195A9CF95A58082C3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DBF35F251676D4C8C8A4EB1C9A0C35A /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		6EDFE64E581F58D4DEB37801AAA728D6 /* Pods_Ameren_EV_HubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ameren_EV_HubTests.framework; path = "Pods-Ameren EV HubTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7439C5AF80C3B0A8A7E392E878A3A52E /* Pods-Ameren EV HubUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV HubUITests-resources.sh"; sourceTree = "<group>"; };
+		77C5F9F51ECFD5C84F0A53FED446999F /* Pods-Ameren EV HubTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV HubTests-frameworks.sh"; sourceTree = "<group>"; };
+		87DBAB1F15022DF6D2399848A6F02A93 /* Pods-Ameren EV Hub-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ameren EV Hub-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		962D56802ADE7923D830FDE1F4999A86 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		970A752FB7B555D0C2061178A2334C24 /* Pods-Ameren EV HubTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV HubTests-resources.sh"; sourceTree = "<group>"; };
+		99B23D8329E7BB2F793B4FAC37A02930 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		9C999C133FABCE3579C54CCDB722CB1A /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = Headers/Public/FIRMessaging.h; sourceTree = "<group>"; };
+		A9C62E0CC5A73BB884A5BA6E3E943AFF /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		AF1A022D1534FBD381A51ABD546BBEBE /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		B29F521ED0647490B0EECA6FBB589A6E /* Pods-Ameren EV HubTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ameren EV HubTests-umbrella.h"; sourceTree = "<group>"; };
+		BC9AFF0F7A71E35278D429AC3F53E806 /* Pods-Ameren EV Hub-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV Hub-resources.sh"; sourceTree = "<group>"; };
+		C0A475A0B7BA11DD27A523F3361FE1D7 /* Pods-Ameren EV HubTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ameren EV HubTests-dummy.m"; sourceTree = "<group>"; };
+		C45E421BB2E5E1E6161C669AD358E836 /* Pods-Ameren EV HubTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ameren EV HubTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C834136600156984347A86DADE39CA11 /* Pods-Ameren EV HubUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Ameren EV HubUITests.modulemap"; sourceTree = "<group>"; };
+		C925C13178319945C565E6B44B479811 /* Pods-Ameren EV HubTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ameren EV HubTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D72627E46D7D71C6C151E6CD4BC5C8CF /* Pods-Ameren EV Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV Hub.debug.xcconfig"; sourceTree = "<group>"; };
+		DF92A7723B2EB71249F02329DD95ABE2 /* Pods-Ameren EV HubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV HubTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2CB04F11CBA22ABB1095F8C6EA66D39 /* Pods-Ameren EV HubUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ameren EV HubUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E61C1CF39DAF89B1701173FE98AD642E /* Pods-Ameren EV Hub.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Ameren EV Hub.modulemap"; sourceTree = "<group>"; };
+		E7393658031C0E43C69722D9ADB1CCF7 /* Pods-Ameren EV HubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV HubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9810EF5511F6F980CFD85F0F40D9F3B /* Pods-Ameren EV Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV Hub.release.xcconfig"; sourceTree = "<group>"; };
+		EBCEFE05DB8E3BFA3D078199312447DB /* Pods-Ameren EV Hub-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ameren EV Hub-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0FE43A943E4BED75498B33BCA5EF769 /* Pods-Ameren EV HubUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ameren EV HubUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8A187EEC59D5FC512BFF0C6795BF2BF /* Pods-Ameren EV Hub-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ameren EV Hub-frameworks.sh"; sourceTree = "<group>"; };
+		FCF7671032E434773DF0FB8C9F9DA6CB /* Pods_Ameren_EV_HubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ameren_EV_HubUITests.framework; path = "Pods-Ameren EV HubUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF02F5B226F9442E34B6C1790C486510 /* Pods-Ameren EV HubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ameren EV HubUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06EFF48F94FB4B77A68F982C80F62287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84086CC39F52481FC55F3DA459528AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8DEA7448886B546A99001450984155D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90DBEE8D7B0F7F19B02475047FFDC88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB22FE0ED8E161C82EEE612236167E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA3C722868BFC4E788CBD6B45A6CBFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0509895AF7B365DD902089176B8743D8 /* Pods-Ameren EV Hub */ = {
+			isa = PBXGroup;
+			children = (
+				657C3B221D5A44195A9CF95A58082C3F /* Info.plist */,
+				E61C1CF39DAF89B1701173FE98AD642E /* Pods-Ameren EV Hub.modulemap */,
+				EBCEFE05DB8E3BFA3D078199312447DB /* Pods-Ameren EV Hub-acknowledgements.markdown */,
+				87DBAB1F15022DF6D2399848A6F02A93 /* Pods-Ameren EV Hub-acknowledgements.plist */,
+				3F11E0D1993ABD7EB9D0873E9FA621BB /* Pods-Ameren EV Hub-dummy.m */,
+				F8A187EEC59D5FC512BFF0C6795BF2BF /* Pods-Ameren EV Hub-frameworks.sh */,
+				BC9AFF0F7A71E35278D429AC3F53E806 /* Pods-Ameren EV Hub-resources.sh */,
+				2960D4A8FBD08276578DC26011B7A4A7 /* Pods-Ameren EV Hub-umbrella.h */,
+				D72627E46D7D71C6C151E6CD4BC5C8CF /* Pods-Ameren EV Hub.debug.xcconfig */,
+				E9810EF5511F6F980CFD85F0F40D9F3B /* Pods-Ameren EV Hub.release.xcconfig */,
+			);
+			name = "Pods-Ameren EV Hub";
+			path = "Target Support Files/Pods-Ameren EV Hub";
+			sourceTree = "<group>";
+		};
+		147FAA34C8B5E4B766FAF0419BB8C659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6509F1430A17220A4219DAD8FFAA1A2F /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15319114180A6ED03FC0481166AD0CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				652FF48CF16D8F4E6B56F12AC076D2F1 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1669DF73CE096216323277106FCB5ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ABA745808EA8BCEB7EB36EBBA7214B2 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AE5555CE1C0EFA8D76E6B81C4FF758D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99B23D8329E7BB2F793B4FAC37A02930 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B69309D9A8F8214AB3982C574E14998 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0509895AF7B365DD902089176B8743D8 /* Pods-Ameren EV Hub */,
+				B65949CCEB1DA95B3856F17F8A568944 /* Pods-Ameren EV HubTests */,
+				926CEE41A750F73D5CBEA7058D4EB100 /* Pods-Ameren EV HubUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4B9DCECDB6A1D62AAC53FB6DEECE906B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C5F8868A261FC0EE688059B2ABA0146 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5590BACC06ABA2767214D8C8BBAF0816 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				147FAA34C8B5E4B766FAF0419BB8C659 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		6958ED6044DC7CC909C779D7F212A0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF1A022D1534FBD381A51ABD546BBEBE /* FirebaseMessaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A4FB59D4786296940451068EA0ED005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1841413C5AE1BC7A0F8C2D0A633AF9A2 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B66EF52C542805CCA4DDB97D31C6944 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				15319114180A6ED03FC0481166AD0CCC /* Frameworks */,
+			);
+			name = GoogleUtilities;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A5E572205446347297E4C8483C93FD14 /* Pods */,
+				F0AECD3373544E836D0E0B5D3C0F3826 /* Products */,
+				4B69309D9A8F8214AB3982C574E14998 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		920EBE9AD64B44C59A38FAD4B2CF1D85 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C42DB4C563B52FEA98FCE9E02FA41A85 /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		926CEE41A750F73D5CBEA7058D4EB100 /* Pods-Ameren EV HubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C35617003A0EAE0D611D445518DE54F /* Info.plist */,
+				C834136600156984347A86DADE39CA11 /* Pods-Ameren EV HubUITests.modulemap */,
+				F0FE43A943E4BED75498B33BCA5EF769 /* Pods-Ameren EV HubUITests-acknowledgements.markdown */,
+				E2CB04F11CBA22ABB1095F8C6EA66D39 /* Pods-Ameren EV HubUITests-acknowledgements.plist */,
+				100F28F916736CF71860373ABA67D818 /* Pods-Ameren EV HubUITests-dummy.m */,
+				1319601C08F7D2D565E701C82D9A81DD /* Pods-Ameren EV HubUITests-frameworks.sh */,
+				7439C5AF80C3B0A8A7E392E878A3A52E /* Pods-Ameren EV HubUITests-resources.sh */,
+				02EF77F55C4B0B769E198C412EE3BAC2 /* Pods-Ameren EV HubUITests-umbrella.h */,
+				52B32ADE71A19A202BD799D3E51BE798 /* Pods-Ameren EV HubUITests.debug.xcconfig */,
+				FF02F5B226F9442E34B6C1790C486510 /* Pods-Ameren EV HubUITests.release.xcconfig */,
+			);
+			name = "Pods-Ameren EV HubUITests";
+			path = "Target Support Files/Pods-Ameren EV HubUITests";
+			sourceTree = "<group>";
+		};
+		9BF83E6F89D40E7FC0071D5FE7DEB766 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				962D56802ADE7923D830FDE1F4999A86 /* FIRInstanceID.h */,
+				1669DF73CE096216323277106FCB5ADB /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		9CBF99C0B9097A14C663665DB177474A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBF35F251676D4C8C8A4EB1C9A0C35A /* GoogleIPhoneUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F40208F5E88B8B17B99E0C1C9B8D465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2311DD5187300181997D8C3528256388 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E572205446347297E4C8483C93FD14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDE3CC02510206F03001C058BF50B922 /* Firebase */,
+				5590BACC06ABA2767214D8C8BBAF0816 /* FirebaseAnalytics */,
+				A6700D76CCB1C1F2AFFDADC5229B8CFC /* FirebaseAuth */,
+				D1782CF824A999B76F729B7DCB348DB1 /* FirebaseDatabase */,
+				9BF83E6F89D40E7FC0071D5FE7DEB766 /* FirebaseInstanceID */,
+				D80AF913D7C80B7EFC62F2D65A74BEA5 /* FirebaseMessaging */,
+				BE30239567A017F9124ED04E0DB8698B /* GoogleInterchangeUtilities */,
+				CF47EF642DA7D87BE678D72A790EE208 /* GoogleIPhoneUtilities */,
+				E56C12E282BA37483B186C4F9D561A46 /* GoogleNetworkingUtilities */,
+				920EBE9AD64B44C59A38FAD4B2CF1D85 /* GoogleSymbolUtilities */,
+				6B66EF52C542805CCA4DDB97D31C6944 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6700D76CCB1C1F2AFFDADC5229B8CFC /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				9F40208F5E88B8B17B99E0C1C9B8D465 /* Frameworks */,
+			);
+			name = FirebaseAuth;
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		B65949CCEB1DA95B3856F17F8A568944 /* Pods-Ameren EV HubTests */ = {
+			isa = PBXGroup;
+			children = (
+				3703498807E17DEB8A863B8F0C1E61F4 /* Info.plist */,
+				218B02D3E497882678EDC1CA73C3EA54 /* Pods-Ameren EV HubTests.modulemap */,
+				C925C13178319945C565E6B44B479811 /* Pods-Ameren EV HubTests-acknowledgements.markdown */,
+				C45E421BB2E5E1E6161C669AD358E836 /* Pods-Ameren EV HubTests-acknowledgements.plist */,
+				C0A475A0B7BA11DD27A523F3361FE1D7 /* Pods-Ameren EV HubTests-dummy.m */,
+				77C5F9F51ECFD5C84F0A53FED446999F /* Pods-Ameren EV HubTests-frameworks.sh */,
+				970A752FB7B555D0C2061178A2334C24 /* Pods-Ameren EV HubTests-resources.sh */,
+				B29F521ED0647490B0EECA6FBB589A6E /* Pods-Ameren EV HubTests-umbrella.h */,
+				E7393658031C0E43C69722D9ADB1CCF7 /* Pods-Ameren EV HubTests.debug.xcconfig */,
+				DF92A7723B2EB71249F02329DD95ABE2 /* Pods-Ameren EV HubTests.release.xcconfig */,
+			);
+			name = "Pods-Ameren EV HubTests";
+			path = "Target Support Files/Pods-Ameren EV HubTests";
+			sourceTree = "<group>";
+		};
+		BB5DACEAB0886B662C8523C02A79D58E /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4C01A46CDF40307239441533FF813E14 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE30239567A017F9124ED04E0DB8698B /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				6A4FB59D4786296940451068EA0ED005 /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		C42DB4C563B52FEA98FCE9E02FA41A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C62E0CC5A73BB884A5BA6E3E943AFF /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE3CC02510206F03001C058BF50B922 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				BB5DACEAB0886B662C8523C02A79D58E /* Analytics */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CF47EF642DA7D87BE678D72A790EE208 /* GoogleIPhoneUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9CBF99C0B9097A14C663665DB177474A /* Frameworks */,
+			);
+			name = GoogleIPhoneUtilities;
+			path = GoogleIPhoneUtilities;
+			sourceTree = "<group>";
+		};
+		D1782CF824A999B76F729B7DCB348DB1 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				4B9DCECDB6A1D62AAC53FB6DEECE906B /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D80AF913D7C80B7EFC62F2D65A74BEA5 /* FirebaseMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				9C999C133FABCE3579C54CCDB722CB1A /* FIRMessaging.h */,
+				6958ED6044DC7CC909C779D7F212A0B7 /* Frameworks */,
+			);
+			name = FirebaseMessaging;
+			path = FirebaseMessaging;
+			sourceTree = "<group>";
+		};
+		E56C12E282BA37483B186C4F9D561A46 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1AE5555CE1C0EFA8D76E6B81C4FF758D /* Frameworks */,
+			);
+			name = GoogleNetworkingUtilities;
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		F0AECD3373544E836D0E0B5D3C0F3826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B0D861ACD81E175C4378A742E0F04F0 /* Pods_Ameren_EV_Hub.framework */,
+				6EDFE64E581F58D4DEB37801AAA728D6 /* Pods_Ameren_EV_HubTests.framework */,
+				FCF7671032E434773DF0FB8C9F9DA6CB /* Pods_Ameren_EV_HubUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD070C680FD81CCA28F21DE1B377891A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC290BBC2A400C70810B800F7A305141 /* Pods-Ameren EV HubUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A3246931A13442D9727383EC1731D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AD90FDE38DB78DF830C9CB9A8D81F9 /* Pods-Ameren EV HubTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07E2267872EF08F0034D38C4C9AB84A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE123AE1AA568D2112B38E09BCE276A2 /* Pods-Ameren EV Hub-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19FB7B635EB7A457A1511885AB0CE878 /* Pods-Ameren EV HubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E0BEEFD09B487EA71053723EFF0533 /* Build configuration list for PBXNativeTarget "Pods-Ameren EV HubTests" */;
+			buildPhases = (
+				6316871FEE77892D77CF760AE8B8579D /* Sources */,
+				06EFF48F94FB4B77A68F982C80F62287 /* Frameworks */,
+				D4A3246931A13442D9727383EC1731D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Ameren EV HubTests";
+			productName = "Pods-Ameren EV HubTests";
+			productReference = 6EDFE64E581F58D4DEB37801AAA728D6 /* Pods_Ameren_EV_HubTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36AF550CEDFBEE7599B0F1205EF27BE7 /* Pods-Ameren EV Hub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947AB7EE8254CEED02DB98B2CEE11D7F /* Build configuration list for PBXNativeTarget "Pods-Ameren EV Hub" */;
+			buildPhases = (
+				B1CC2F837F3B985CB8617964AA46334B /* Sources */,
+				CB22FE0ED8E161C82EEE612236167E7E /* Frameworks */,
+				E07E2267872EF08F0034D38C4C9AB84A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Ameren EV Hub";
+			productName = "Pods-Ameren EV Hub";
+			productReference = 1B0D861ACD81E175C4378A742E0F04F0 /* Pods_Ameren_EV_Hub.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F88DB26FFB354EB80CAB1A80D27CE00 /* Pods-Ameren EV HubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DA4FC448F5BA08AE837286DEDF47DA /* Build configuration list for PBXNativeTarget "Pods-Ameren EV HubUITests" */;
+			buildPhases = (
+				6D1715F5BA25AA42C8E3DA06DC385C7B /* Sources */,
+				C8DEA7448886B546A99001450984155D /* Frameworks */,
+				AD070C680FD81CCA28F21DE1B377891A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Ameren EV HubUITests";
+			productName = "Pods-Ameren EV HubUITests";
+			productReference = FCF7671032E434773DF0FB8C9F9DA6CB /* Pods_Ameren_EV_HubUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F0AECD3373544E836D0E0B5D3C0F3826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36AF550CEDFBEE7599B0F1205EF27BE7 /* Pods-Ameren EV Hub */,
+				19FB7B635EB7A457A1511885AB0CE878 /* Pods-Ameren EV HubTests */,
+				8F88DB26FFB354EB80CAB1A80D27CE00 /* Pods-Ameren EV HubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6316871FEE77892D77CF760AE8B8579D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB77AA0BD7B7408B1D7774B03EFB6FE /* Pods-Ameren EV HubTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D1715F5BA25AA42C8E3DA06DC385C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1F2A49FEBDC6DB49ED2831BEC91D30 /* Pods-Ameren EV HubUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CC2F837F3B985CB8617964AA46334B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4804648CB8CFD9608F9FABD5D9DD4D3 /* Pods-Ameren EV Hub-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		20C29BC81B445312DB96323EDAD64C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D72627E46D7D71C6C151E6CD4BC5C8CF /* Pods-Ameren EV Hub.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV Hub/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_Hub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		414457CFADF94F273487AB27942E3302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF02F5B226F9442E34B6C1790C486510 /* Pods-Ameren EV HubUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV HubUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_HubUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		484D97A55EC2387FAB24B6F8816A2906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B32ADE71A19A202BD799D3E51BE798 /* Pods-Ameren EV HubUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV HubUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV HubUITests/Pods-Ameren EV HubUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_HubUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D2D7E11893F73C90BDA2EA3B0F961CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9810EF5511F6F980CFD85F0F40D9F3B /* Pods-Ameren EV Hub.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV Hub/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_Hub;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC2B3538D3F7CFCF57D6033D9865F6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF92A7723B2EB71249F02329DD95ABE2 /* Pods-Ameren EV HubTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV HubTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_HubTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D71A2C177B02BC69CDE591C3BFB6A4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7393658031C0E43C69722D9ADB1CCF7 /* Pods-Ameren EV HubTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Ameren EV HubTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ameren EV HubTests/Pods-Ameren EV HubTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ameren_EV_HubTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E0BEEFD09B487EA71053723EFF0533 /* Build configuration list for PBXNativeTarget "Pods-Ameren EV HubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D71A2C177B02BC69CDE591C3BFB6A4A3 /* Debug */,
+				BC2B3538D3F7CFCF57D6033D9865F6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55DA4FC448F5BA08AE837286DEDF47DA /* Build configuration list for PBXNativeTarget "Pods-Ameren EV HubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484D97A55EC2387FAB24B6F8816A2906 /* Debug */,
+				414457CFADF94F273487AB27942E3302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947AB7EE8254CEED02DB98B2CEE11D7F /* Build configuration list for PBXNativeTarget "Pods-Ameren EV Hub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20C29BC81B445312DB96323EDAD64C75 /* Debug */,
+				7D2D7E11893F73C90BDA2EA3B0F961CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

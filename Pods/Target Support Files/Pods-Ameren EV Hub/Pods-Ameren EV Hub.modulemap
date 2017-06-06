@@ -1,0 +1,6 @@
+framework module Pods_Ameren_EV_Hub {
+  umbrella header "Pods-Ameren EV Hub-umbrella.h"
+
+  export *
+  module * { export * }
+}
