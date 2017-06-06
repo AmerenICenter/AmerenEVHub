@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		05D03BB293532228BD8C67E3 /* Pods_Ameren_EV_HubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A9E2492E43C6A62459C5D /* Pods_Ameren_EV_HubUITests.framework */; };
+		1D14D99F1EE73BCD0021665D /* data in Resources */ = {isa = PBXBuildFile; fileRef = 1D14D99B1EE73BCD0021665D /* data */; };
+		1D14D9A01EE73BCD0021665D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D14D99C1EE73BCD0021665D /* Map.storyboard */; };
+		1D14D9A11EE73BCD0021665D /* ParkingSatelliteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */; };
+		1D14D9A21EE73BCD0021665D /* ParkingSpotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */; };
 		1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050881ED5E11300F906F7 /* AppDelegate.swift */; };
 		1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70508A1ED5E11300F906F7 /* ViewController.swift */; };
 		1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D70508C1ED5E11300F906F7 /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		06CDFA1FD8C61592E2805326 /* Pods_Ameren_EV_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ameren_EV_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4A0336380EA6066A901C8C /* Pods-Ameren EV Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ameren EV Hub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ameren EV Hub/Pods-Ameren EV Hub.release.xcconfig"; sourceTree = "<group>"; };
+		1D14D99B1EE73BCD0021665D /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		1D14D99C1EE73BCD0021665D /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSatelliteViewController.swift; sourceTree = "<group>"; };
+		1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpotAnnotation.swift; sourceTree = "<group>"; };
 		1D7050851ED5E11300F906F7 /* Ameren EV Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ameren EV Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050881ED5E11300F906F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D70508A1ED5E11300F906F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 		1D7050871ED5E11300F906F7 /* Ameren EV Hub */ = {
 			isa = PBXGroup;
 			children = (
+				1D14D99B1EE73BCD0021665D /* data */,
+				1D14D99C1EE73BCD0021665D /* Map.storyboard */,
+				1D14D99D1EE73BCD0021665D /* ParkingSatelliteViewController.swift */,
+				1D14D99E1EE73BCD0021665D /* ParkingSpotAnnotation.swift */,
 				FB205DA71EE0B54A00708ED2 /* Ameren EV Hub.entitlements */,
 				FB0AF7CF1ED5E76600884FCA /* GoogleService-Info.plist */,
 				1D7050881ED5E11300F906F7 /* AppDelegate.swift */,
@@ -313,9 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0AF7D21ED5E85400884FCA /* Podfile in Resources */,
+				1D14D9A01EE73BCD0021665D /* Map.storyboard in Resources */,
 				1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */,
 				FB0AF7D01ED5E76600884FCA /* GoogleService-Info.plist in Resources */,
 				1D7050901ED5E11300F906F7 /* Assets.xcassets in Resources */,
+				1D14D99F1EE73BCD0021665D /* data in Resources */,
 				1D70508E1ED5E11300F906F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,8 +494,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0AF7D81ED6097900884FCA /* ResetPasswordViewController.swift in Sources */,
+				1D14D9A11EE73BCD0021665D /* ParkingSatelliteViewController.swift in Sources */,
 				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
 				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
+				1D14D9A21EE73BCD0021665D /* ParkingSpotAnnotation.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
 				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,

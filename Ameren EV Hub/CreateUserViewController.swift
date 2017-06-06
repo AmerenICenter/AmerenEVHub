@@ -30,7 +30,16 @@ class CreateUserViewController: UIViewController {
         FIRAuth.auth()?.createUser(withEmail: email!, password: password!, completion: { (user: FIRUser?, error) in
             if error == nil {
                 OperationQueue.main.addOperation {
-                    self.createWorked()
+                    FIRAuth.auth()?.signIn(withEmail: email!, password: password!, completion: { (user: FIRUser?, error) in
+                        if error == nil {
+                            //  If there is no error associated with login, print to the console and go the navigation screen.
+                            print("Success")
+                            self.performSegue(withIdentifier: "goToNavHomeNewUser", sender: nil)
+                            
+                        }
+                    })
+
+                    //self.createWorked()
                 }
             } else  {
                 OperationQueue.main.addOperation {
@@ -56,7 +65,7 @@ class CreateUserViewController: UIViewController {
         let dismiss = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(dismiss)
         self.present(alert, animated: true, completion: nil)
-    }
+}
     
     // viewDidLoad() is overloaded to hide the navigation screen.
     

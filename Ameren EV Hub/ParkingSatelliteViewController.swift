@@ -59,7 +59,7 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     var annotationImageViews = [UIImageView]()
     
     // Firebase database reference
-    var parkingDatabaseRef: DatabaseReference!
+    var parkingDatabaseRef: FIRDatabaseReference!
     
     // MARK: - Overridden UIViewController Functions
     
@@ -104,8 +104,8 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
         
         print(5)
         // Queries database for tower states
-        parkingDatabaseRef = Database.database().reference()
-        parkingDatabaseRef.child("EVApp/EVAppData").observe(DataEventType.childAdded, with: recieveFirebaseData)
+        parkingDatabaseRef = FIRDatabase.database().reference()
+        parkingDatabaseRef.child("EVApp/EVAppData").observe(FIRDataEventType.childAdded, with: recieveFirebaseData)
         
     }
 
@@ -164,7 +164,7 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // recieveFirebaseData - recieve Firebase data
     // ----------------------------------------------------------------
     
-    func recieveFirebaseData(_ data: DataSnapshot) -> Void {
+    func recieveFirebaseData(_ data: FIRDataSnapshot) -> Void {
         print (data.valueInExportFormat() ?? "not...found")
     }
     
