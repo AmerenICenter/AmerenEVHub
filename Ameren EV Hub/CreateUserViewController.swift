@@ -20,7 +20,7 @@ class CreateUserViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    //  Function that creates the user. 
+    //  Function that creates the user.
     
     @IBAction func createUser(_ sender: Any) {
         

@@ -17,54 +17,80 @@ import FirebaseDatabase
 class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFieldDelegate, UIPickerViewDelegate {
     
     var ref: FIRDatabaseReference!
-//    @IBOutlet weak var EVSEForMe: UITextField!
     var EVSEForMe: String = ""
     var isInUseFlag = false
     var refHandle : UInt = 0
+    @IBOutlet weak var timerImage: UILabel!
     
-////////////////////////////////////////////////////////////////////////
+    var seconds = 0;
+    var timer = Timer()
+    var isTimerRunning = false
+    var resumeTapped = false
     
-////////////////////////////////////////////////////////////////////////
-//  This is deleted at last working interval
+    //  Functions associated with the timer.
+    
+    func startTimer() {
+        if isTimerRunning == false { runTimer() }
+    }
+    
+    func pauseTimer() { timer.invalidate() }
+    
+    func resetTimer() {
+        timer.invalidate()
+        seconds = 0
+        timerImage.text = timeString(time: TimeInterval(seconds))
+        isTimerRunning = false
+    }
+    
+    func updateTimer() {
+        seconds += 1
+        timerImage.text = timeString(time: TimeInterval(seconds))
+    }
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        isTimerRunning = true
+    }
+    
+    func timeString(time:TimeInterval) -> String {
+        let hours = Int(time) / 3600
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+    }
+    
+    ////////////////////////////////////////////////////////////////////////
+    
+    //  Functions to enable the picker view and set the proper variables
+    
     @IBOutlet weak var dropDown: UIPickerView!
+    var names = ["parkingSpot1", "parkingSpot2", "parkingSpot3", "parkingSpot4", "parkingSpot5", "parkingSpot6"]
     
-    var names = ["parkingSpot1", "parkingSpot2", "parkingSpot3"]
+    func numberOfComponents(in pickerView: UIPickerView) -> Int { return 1 }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int { return names.count }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? { return names[row] }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) { self.EVSEForMe = self.names[row] }
+    func textFieldDidBeginEditing(_ textField: UITextField) { self.dropDown.isHidden = false }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
+    ///////////////////////////////////////////////////////////////////////////
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return names.count
-    }
+    //  Functions associated with the observer/managing the car charger.
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return names[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.EVSEForMe = self.names[row]
-       // self.dropDown.isHidden = true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.dropDown.isHidden = false
-    }
-    
-    
-    
-///////////////////////////////////////////////////////////////////////////
-    
-    
-    //  Function that creates/ends the alert for the user.
     
     @IBAction func addToAlert(_ sender: Any) {
+        
+        if !isInUseFlag {
+            resetTimer()
+            startTimer()
+        }
+        
         if !isInUseFlag && (EVSEForMe != "") {
             isInUseFlag = true
             refHandle = self.ref.child("EVApp/EVAppData").child(EVSEForMe).observe(FIRDataEventType.value, with: { snap in
                 let state = String(describing: snap.childSnapshot(forPath: "EVSEState").valueInExportFormat()!)
                 if (state == "4") {
                     //  If the car has charged then stop checking it and call the helper function.
+                    self.pauseTimer()
                     print("Car is done charging please move it!")
                     self.ref.child("EVApp/EVAppData").child(self.EVSEForMe).removeObserver(withHandle: self.refHandle)
                     self.carIsCharged()
@@ -80,10 +106,11 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
         }
     }
     
-    //  This function removes the observer from the car. 
+    //  This function removes the observer from the car.
     
     @IBAction func removeCar(_ sender: Any) {
         if isInUseFlag {
+            self.pauseTimer()
             print("Car is removed from alert me system!")
             self.ref.child("EVApp/EVAppData").child(self.EVSEForMe).removeObserver(withHandle: self.refHandle)
             isInUseFlag = false
@@ -91,7 +118,7 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
             print("Nothing interesting happens")
         }
     }
-
+    
     
     //  Allows the user to log out.
     

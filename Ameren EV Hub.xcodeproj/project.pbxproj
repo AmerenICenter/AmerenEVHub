@@ -24,7 +24,6 @@
 		FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */; };
 		FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7DF1ED886A900884FCA /* NavViewController.swift */; };
 		FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */; };
-		FB205DAB1EE5B52600708ED2 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB205DAA1EE5B52600708ED2 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,6 @@
 		FB0AF7DF1ED886A900884FCA /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMeViewController.swift; sourceTree = "<group>"; };
 		FB205DA71EE0B54A00708ED2 /* Ameren EV Hub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ameren EV Hub.entitlements"; sourceTree = "<group>"; };
-		FB205DAA1EE5B52600708ED2 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +161,6 @@
 				FB0AF7D91ED6098800884FCA /* CreateUserViewController.swift */,
 				FB0AF7DB1ED6099400884FCA /* LoginViewController.swift */,
 				1D70508C1ED5E11300F906F7 /* Main.storyboard */,
-				FB205DAA1EE5B52600708ED2 /* TimerViewController.swift */,
 				FB0AF7DF1ED886A900884FCA /* NavViewController.swift */,
 				1D70508F1ED5E11300F906F7 /* Assets.xcassets */,
 				1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */,
@@ -486,7 +483,6 @@
 				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
 				1D70508B1ED5E11300F906F7 /* ViewController.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
-				FB205DAB1EE5B52600708ED2 /* TimerViewController.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
 				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,
 				FB0AF7DA1ED6098800884FCA /* CreateUserViewController.swift in Sources */,

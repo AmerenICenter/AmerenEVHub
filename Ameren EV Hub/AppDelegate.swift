@@ -45,5 +45,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+//    func addChargingAlert(_ ref: FIRDatabaseReference, EVSE EVSEForMe: String) -> UInt {
+//        return ref.child("EVApp/EVAppData").child(EVSEForMe).observe(FIRDataEventType.value, with: { snap in
+//            let state = String(describing: snap.childSnapshot(forPath: "EVSEState").valueInExportFormat()!)
+//            if (state == "4") {
+//                //  If the car has charged then stop checking it and call the helper function.
+//                self.pauseTimer()
+//                print("Car is done charging please move it!")
+//                self.ref.child("EVApp/EVAppData").child(self.EVSEForMe).removeObserver(withHandle: self.refHandle)
+//                self.carIsCharged()
+//            }
+//            else {
+//                print("Car is still charging!")
+//            }
+//        })
+//    }
+    
 }
 
