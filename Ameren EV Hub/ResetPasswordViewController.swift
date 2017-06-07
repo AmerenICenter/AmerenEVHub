@@ -14,7 +14,7 @@ import Firebase
 //  depending on if the email is valid. Presents a message depending on
 //  whether the reset attempt was succesful or not.
 
-class ResetPasswordViewController: UIViewController {
+class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -60,5 +60,31 @@ class ResetPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        emailTextField.returnKeyType = UIReturnKeyType.go
+        emailTextField.textAlignment = NSTextAlignment.center
+        emailTextField.delegate = self
+    }
+    
+    // MARK: - Outlet Functions
+    
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        emailTextField.resignFirstResponder()
+    }
+
+    // MARK: - UITextFieldDelegate Functions
+
+    // ----------------------------------------------------------------
+    // textFieldShouldReturn - specifies text field behavior on return
+    //                         key, in this case, navigating from email
+    //                         view to text view to login
+    // @return - false, indicating text field should not execute
+    //           default behavior
+    // ----------------------------------------------------------------
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text != nil && textField.text!.characters.count > 0) {
+            resetPassword(self)
+        }
+        return false
     }
 }

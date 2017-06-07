@@ -51,8 +51,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationItem.setHidesBackButton(true, animated: false)
         emailTextField.returnKeyType = UIReturnKeyType.next
         emailTextField.textAlignment = NSTextAlignment.center
+        emailTextField.delegate = self
         passwordTextField.returnKeyType = UIReturnKeyType.go
         passwordTextField.textAlignment = NSTextAlignment.center
+        passwordTextField.delegate = self
+    }
+
+    // MARK: - Outlet Functions
+
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     // MARK: - UITextFieldDelegate Functions

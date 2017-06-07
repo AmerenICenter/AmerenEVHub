@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 // Dictionary mapping parking spot states to human-readable strings
-var stateStrings: [Int : String] = [TOWER_STATE_IDLE : "Available", TOWER_STATE_CONNECTED : "In Use", TOWER_STATE_CHARGING : "Charged", TOWER_STATE_FAULT : "Out of Order"]
+var stateStrings: [Int : String] = [TOWER_STATE_IDLE : "Available", TOWER_STATE_CONNECTED : "Charged", TOWER_STATE_CHARGING : "In Use", TOWER_STATE_FAULT : "Error"]
 
 class ParkingSpotAnnotation: NSObject, MKAnnotation {
     

@@ -15,7 +15,7 @@ import FirebaseAuth
 //  and email. *NOTE* Email is not verified, and therefore
 //  not guaranteed to be valid.
 
-class CreateUserViewController: UIViewController {
+class CreateUserViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -72,5 +72,40 @@ class CreateUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        emailTextField.returnKeyType = UIReturnKeyType.next
+        emailTextField.textAlignment = NSTextAlignment.center
+        emailTextField.delegate = self
+        passwordTextField.returnKeyType = UIReturnKeyType.go
+        passwordTextField.textAlignment = NSTextAlignment.center
+        passwordTextField.delegate = self
+    }
+    
+    // MARK: - Outlet Functions
+
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+
+    
+    // MARK: - UITextFieldDelegate Functions
+    
+    // ----------------------------------------------------------------
+    // textFieldShouldReturn - specifies text field behavior on return
+    //                         key, in this case, navigating from email
+    //                         view to text view to login
+    // @return - false, indicating text field should not execute
+    //           default behavior
+    // ----------------------------------------------------------------
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text != nil && textField.text!.characters.count > 0) {
+            if (textField == emailTextField) {
+                passwordTextField.becomeFirstResponder()
+            } else {
+                createUser(self)
+            }
+        }
+        return false
     }
 }
