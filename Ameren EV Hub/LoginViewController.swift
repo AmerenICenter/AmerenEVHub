@@ -14,12 +14,12 @@ import FirebaseAuth
 //  Allows user to log in to the application
 //  if they have their email and password.
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    //  Function that allows the user to login and authenticate themself.
+    //  Function that allows the user to login and authenticate themself
     
     @IBAction func loginUser(_ sender: Any) {
         
@@ -42,12 +42,38 @@ class LoginViewController: UIViewController {
         })
     }
     
+    // MARK: - Overridden Parent Functions
+    
     //  This function is overloaded to hide the navigation screen.
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        emailTextField.returnKeyType = UIReturnKeyType.next
+        emailTextField.textAlignment = NSTextAlignment.center
+        passwordTextField.returnKeyType = UIReturnKeyType.go
+        passwordTextField.textAlignment = NSTextAlignment.center
     }
     
+    // MARK: - UITextFieldDelegate Functions
+    
+    // ----------------------------------------------------------------
+    // textFieldShouldReturn - specifies text field behavior on return
+    //                         key, in this case, navigating from email
+    //                         view to text view to login
+    // @return - false, indicating text field should not execute
+    //           default behavior
+    // ----------------------------------------------------------------
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (textField.text != nil && textField.text!.characters.count > 0) {
+            if (textField == emailTextField) {
+                passwordTextField.becomeFirstResponder()
+            } else {
+                loginUser(self)
+            }
+        }
+        return false
+    }
 }
 
