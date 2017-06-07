@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 // Dictionary mapping parking spot states to human-readable strings
-var stateStrings: [Int : String] = [TOWER_STATE_IDLE : "Available", TOWER_STATE_CONNECTED : "In Use", TOWER_STATE_CHARGING : "Done Charging", TOWER_STATE_FAULT : "Out of Order"]
+var stateStrings: [Int : String] = [TOWER_STATE_IDLE : "Available", TOWER_STATE_CONNECTED : "In Use", TOWER_STATE_CHARGING : "Charged", TOWER_STATE_FAULT : "Out of Order"]
 
 class ParkingSpotAnnotation: NSObject, MKAnnotation {
     
@@ -34,7 +34,6 @@ class ParkingSpotAnnotation: NSObject, MKAnnotation {
     // The detail view we create, and the label we edit within it
     @IBOutlet weak var detailView: UIView!
     @IBOutlet weak var stateLabel: UILabel!
-
     
     // MARK: - Class Functions
     
