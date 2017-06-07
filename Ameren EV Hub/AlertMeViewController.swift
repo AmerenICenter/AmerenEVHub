@@ -127,8 +127,8 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
             do {
                 try? FIRAuth.auth()?.signOut()
                 if FIRAuth.auth()?.currentUser == nil {
-                    let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as! LoginViewController
-                    self.present(loginVC, animated: true, completion: nil)
+                    let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "home") as! LoginViewController
+                    self.navigationController?.pushViewController(loginVC, animated: true)
                 }
             }
         }
@@ -159,6 +159,7 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logMeOut(_:)))
     }// Do any additional setup after loading the view.
     
 }

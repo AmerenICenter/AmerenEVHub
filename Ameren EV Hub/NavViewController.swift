@@ -24,6 +24,7 @@ class NavViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logOut(_:)))
         mapImage.isUserInteractionEnabled = true
         carImage.isUserInteractionEnabled = true
         mapTap.addTarget(self, action: #selector(NavViewController.mapTapped))
@@ -45,8 +46,8 @@ class NavViewController: UIViewController {
             do {
                 try? FIRAuth.auth()?.signOut()
                 if FIRAuth.auth()?.currentUser == nil {
-                    let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as! LoginViewController
-                    self.present(loginVC, animated: true, completion: nil)
+                    let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "home") as! LoginViewController
+                    self.navigationController?.pushViewController(loginVC, animated: true)
                 }
             }
         }
