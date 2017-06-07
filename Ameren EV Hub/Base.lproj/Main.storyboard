@@ -50,26 +50,26 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oui-7x-lpE">
-                                <rect key="frame" x="80" y="312" width="215" height="30"/>
+                                <rect key="frame" x="80" y="268" width="215" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-u4-npn">
-                                <rect key="frame" x="133.5" y="357" width="109" height="30"/>
+                                <rect key="frame" x="133.5" y="313" width="109" height="30"/>
                                 <state key="normal" title="Reset Password"/>
                                 <connections>
                                     <action selector="resetPassword:" destination="ztX-FQ-F2I" eventType="primaryActionTriggered" id="7bQ-Y9-1Ns"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ameren EV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-yO-arl">
-                                <rect key="frame" x="95.5" y="150" width="185" height="46"/>
+                                <rect key="frame" x="95.5" y="106" width="185" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" red="0.33287372891865075" green="0.3342013888888889" blue="0.33197467137896824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have forgotten your password, enter your email below. You will be sent a link to reset your password." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lql-kB-DnN">
-                                <rect key="frame" x="18" y="204" width="339" height="100"/>
+                                <rect key="frame" x="18" y="160" width="339" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="UDY-ne-HdX"/>
                                 </constraints>
@@ -127,13 +127,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-Py-pDG">
-                                <rect key="frame" x="78" y="341" width="219" height="30"/>
+                                <rect key="frame" x="78" y="297" width="219" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ameren EV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mY-JE-ktt">
-                                <rect key="frame" x="95.5" y="129" width="185" height="72"/>
+                                <rect key="frame" x="95.5" y="85" width="185" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="jJe-8T-f0b"/>
                                 </constraints>
@@ -142,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-hn-Htp">
-                                <rect key="frame" x="78" y="303" width="219" height="30"/>
+                                <rect key="frame" x="78" y="259" width="219" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
@@ -158,7 +158,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ej-GD-obE">
-                                <rect key="frame" x="160" y="373" width="55" height="40"/>
+                                <rect key="frame" x="160" y="329" width="55" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Lgx-ZB-tOo"/>
                                 </constraints>
@@ -175,7 +175,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take advantage of Ameren's EV status map and car charging alert today! Create an account below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0O-rk-1J4">
-                                <rect key="frame" x="21" y="209" width="334" height="68"/>
+                                <rect key="frame" x="21" y="165" width="334" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="dCj-lj-yCd"/>
                                 </constraints>
@@ -241,7 +241,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCK-ta-Q1w">
-                                <rect key="frame" x="137.5" y="91" width="100" height="33"/>
+                                <rect key="frame" x="137.5" y="47" width="100" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="ReC-xO-pSK"/>
                                 </constraints>
@@ -268,7 +268,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car keys" translatesAutoresizingMaskIntoConstraints="NO" id="ahr-Aa-0we">
-                                <rect key="frame" x="49" y="145" width="275" height="155"/>
+                                <rect key="frame" x="49" y="101" width="275" height="199"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
@@ -331,7 +331,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Charging Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-aU-m2N">
-                                <rect key="frame" x="42" y="115" width="291" height="37"/>
+                                <rect key="frame" x="42" y="71" width="291" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="vRg-JH-tzG"/>
                                 </constraints>
@@ -340,7 +340,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fjR-tF-Kuf">
-                                <rect key="frame" x="28" y="160" width="316.5" height="58"/>
+                                <rect key="frame" x="28" y="116" width="316.5" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="Ixq-wu-oKt"/>
                                 </constraints>
@@ -378,13 +378,13 @@
                                 <color key="textColor" red="0.33222018347777788" green="0.3345530827833334" blue="0.33218826853333344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Spent Charging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axW-Xg-ojl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time Spent Charging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axW-Xg-ojl">
                                 <rect key="frame" x="106" y="439" width="162" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.33222018347777788" green="0.3345530827833334" blue="0.33218826853333344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-a6-9VI">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-a6-9VI">
                                 <rect key="frame" x="68" y="295" width="236" height="77"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -454,13 +454,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQu-o0-MFn">
-                                <rect key="frame" x="80" y="342" width="217" height="30"/>
+                                <rect key="frame" x="80" y="298" width="217" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ameren EV " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT4-gT-WkS">
-                                <rect key="frame" x="91.5" y="156" width="194" height="43"/>
+                                <rect key="frame" x="91.5" y="112" width="194" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="QGs-5c-CHG"/>
                                 </constraints>
@@ -476,7 +476,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23t-aC-4lv">
-                                <rect key="frame" x="168.5" y="390" width="38" height="30"/>
+                                <rect key="frame" x="168.5" y="346" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginUser:" destination="NGP-yc-ogi" eventType="touchUpInside" id="KM4-jP-kj9"/>
@@ -494,13 +494,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-G7-Z2p">
-                                <rect key="frame" x="80" y="304" width="216" height="30"/>
+                                <rect key="frame" x="80" y="260" width="216" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to view Ameren's EV status map or to keep track of your charging vehicle!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ugy-oc-NXI">
-                                <rect key="frame" x="23" y="213" width="332" height="73"/>
+                                <rect key="frame" x="23" y="169" width="332" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="zzj-fU-fpc"/>
                                 </constraints>
@@ -533,7 +533,7 @@
                     <navigationItem key="navigationItem" id="rx2-bV-Gsg"/>
                     <connections>
                         <outlet property="emailTextField" destination="sOv-G7-Z2p" id="4em-sy-WO6"/>
-                        <outlet property="passwordTextField" destination="MQu-o0-MFn" id="XwB-vA-bfS"/>
+                        <outlet property="passwordTextField" destination="MQu-o0-MFn" id="ka2-qD-Qvl"/>
                         <segue destination="X9Z-dQ-BeU" kind="show" identifier="goToNavHome" id="EGr-e0-jkj"/>
                     </connections>
                 </viewController>
@@ -547,9 +547,9 @@
         <image name="map" width="1920" height="1055"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zVm-dT-OrF"/>
-        <segue reference="mO7-tA-LiR"/>
-        <segue reference="STc-oy-9FM"/>
+        <segue reference="k6R-GY-DzJ"/>
         <segue reference="3mn-IY-NsO"/>
+        <segue reference="EGr-e0-jkj"/>
+        <segue reference="u2T-rb-mUC"/>
     </inferredMetricsTieBreakers>
 </document>
