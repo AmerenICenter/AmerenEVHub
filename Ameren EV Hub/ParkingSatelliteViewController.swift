@@ -35,6 +35,9 @@ let TOWER_STATE_CONNECTED = 4
 let TOWER_STATE_CHARGING = 5
 let TOWER_STATE_FAULT = 6
 
+// Dictionary mapping parking spot states to UIImage objects
+var stateImages: [Int : UIImage] = [TOWER_STATE_IDLE : #imageLiteral(resourceName: "Free Symbol"), TOWER_STATE_CONNECTED : #imageLiteral(resourceName: "Complete Symbol"), TOWER_STATE_CHARGING : #imageLiteral(resourceName: "Charging Symbol"), TOWER_STATE_FAULT : #imageLiteral(resourceName: "Error Symbol")]
+
 class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     
     // MARK: - Outlet Connections
@@ -48,9 +51,6 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     var defaultCenter: CLLocationCoordinate2D! = nil
     var defaultSpan: MKCoordinateSpan! = nil
     var defaultRegion: MKCoordinateRegion! = nil
-    
-    // Dictionary mapping parking spot states to UIImage objects
-    var stateImages: [Int : UIImage] = [TOWER_STATE_IDLE : #imageLiteral(resourceName: "Free Symbol"), TOWER_STATE_CONNECTED : #imageLiteral(resourceName: "Complete Symbol"), TOWER_STATE_CHARGING : #imageLiteral(resourceName: "Charging Symbol"), TOWER_STATE_FAULT : #imageLiteral(resourceName: "Error Symbol")]
     
     // Parking spot index JSON object
     var spotLocations = [String : [CLLocationDegrees]]()
@@ -108,20 +108,18 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // MARK: - MKMapViewDelegate Functions
     
     // ----------------------------------------------------------------
-    // mapView:regionWillChangeAnimated: - called right before map view
+    // mapView:regionWillChangeAnimated: - called right after map view
     //                                     changes, resizes annotation
-    //                                     views
+    //                                     views (kinda choppy, but
+    //                                     what're you gonna do)
     // @param mapView - the current MKMapView
-    // @param regionWillChangeAnimated - if the change is gonna be
-    //                                   animated, which I'm not sure 
-    //                                   what I want to do with
+    // @param regionDidChangeAnimated - if the change is gonna be
+    //                                  animated, which I'm not sure
+    //                                  what I want to do with
     // ----------------------------------------------------------------
 
-    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
-        print(mapView.region.span)
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, ICON_LATITUDE_RATIO / mapView.region.span.latitudeDelta))
-        print(dimension)
-        print(ICON_LATITUDE_RATIO / mapView.region.span.latitudeDelta)
         let newAnnotationImageViewRect = CGRect(x: dimension / -2, y: dimension / -2, width: dimension, height: dimension)
         for annotationImageView in annotationImageViews {
             annotationImageView.frame = newAnnotationImageViewRect
@@ -139,19 +137,18 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let spotAnnotation = annotation as? ParkingSpotAnnotation {
             let annotationView = MKAnnotationView(annotation: spotAnnotation, reuseIdentifier: spotAnnotation.title)
-            // spotAnnotation.addDetailView(annotationView)
             let dimension = min(ICON_SIZE_MAXIMUM, max(ICON_SIZE_MINIMUM, ICON_LATITUDE_RATIO / satelliteMapView.region.span.latitudeDelta))
             let annotationImageViewRect = CGRect(x: dimension / -2, y: dimension / -2, width: dimension, height: dimension)
             let annotationImageView = UIImageView(frame: annotationImageViewRect)
             annotationImageView.contentMode = UIViewContentMode.scaleAspectFit
             if let sd = spotData {
-                print(sd.key)
                 let spotTitle: String = "parkingSpot" + String(spotAnnotation.spotID) + "/EVSEState"
-                print(spotTitle)
-                print((sd.childSnapshot(forPath: spotTitle).value)!)
-                annotationImageView.image = stateImages[sd.childSnapshot(forPath: spotTitle).value as! Int]
+                let spotState: Int = sd.childSnapshot(forPath: spotTitle).value as! Int
+                annotationImageView.image = stateImages[spotState]
+                spotAnnotation.addDetailView(annotationView, towerState: spotState)
             } else {
-                annotationImageView.image = stateImages[TOWER_STATE_IDLE]
+                annotationImageView.image = stateImages[TOWER_STATE_FAULT]
+                spotAnnotation.addDetailView(annotationView, towerState: TOWER_STATE_FAULT)
             }
             annotationImageViews.append(annotationImageView)
             annotationView.addSubview(annotationImageView)
@@ -187,15 +184,4 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
             satelliteMapView.addAnnotation(spotAnnotation)
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -9,6 +9,9 @@
 import UIKit
 import MapKit
 
+// Dictionary mapping parking spot states to human-readable strings
+var stateStrings: [Int : String] = [TOWER_STATE_IDLE : "Available", TOWER_STATE_CONNECTED : "In Use", TOWER_STATE_CHARGING : "Done Charging", TOWER_STATE_FAULT : "Out of Order"]
+
 class ParkingSpotAnnotation: NSObject, MKAnnotation {
     
     // MARK: - MKAnnotation Protocol Attributes
@@ -28,8 +31,10 @@ class ParkingSpotAnnotation: NSObject, MKAnnotation {
     // This annotation's view
     weak var view: MKAnnotationView!
     
-    // The detail view we create
-    @IBOutlet var detailView: UIView!
+    // The detail view we create, and the label we edit within it
+    @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var stateLabel: UILabel!
+
     
     // MARK: - Class Functions
     
@@ -55,14 +60,25 @@ class ParkingSpotAnnotation: NSObject, MKAnnotation {
     //               (retained)
     // ----------------------------------------------------------------
     
-    func addDetailView(_ aView: MKAnnotationView) {
+    func addDetailView(_ aView: MKAnnotationView, towerState state: Int) {
         self.view = aView
         Bundle.main.loadNibNamed("ParkingSpotAnnotationDetailView", owner: self, options: nil)
-        self.detailView.frame.size.height = 90
-        self.detailView.frame.size.width = 50
-        self.view.canShowCallout = true
-        self.view.detailCalloutAccessoryView = self.detailView
-        
+        if (self.detailView != nil) {
+            self.view.canShowCallout = true
+            self.view.detailCalloutAccessoryView = self.detailView
+            updateDetailView(state)
+        }
+    }
+    
+    // ----------------------------------------------------------------
+    // updateDetailView - changes label content to reflect current
+    //                    tower state
+    // @param state - current tower charge state
+    // ----------------------------------------------------------------
+    func updateDetailView(_ state: Int) {
+        if (stateLabel != nil) {
+            stateLabel.text = "Current State: " + stateStrings[state]!
+        }
     }
     
     // ----------------------------------------------------------------
