@@ -49,6 +49,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationItem.title = "Log In"
         emailTextField.returnKeyType = UIReturnKeyType.next
         emailTextField.textAlignment = NSTextAlignment.center
         emailTextField.delegate = self

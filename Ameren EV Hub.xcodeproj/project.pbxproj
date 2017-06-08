@@ -15,6 +15,7 @@
 		1D7050931ED5E11300F906F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */; };
 		1D70509E1ED5E11400F906F7 /* Ameren_EV_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D70509D1ED5E11400F906F7 /* Ameren_EV_HubTests.swift */; };
 		1D7050A91ED5E11400F906F7 /* Ameren_EV_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */; };
+		1DBB2ED21EE997A6009EF420 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB2ED11EE997A6009EF420 /* CheckInViewController.swift */; };
 		1DD441CC1EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD441C81EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib */; };
 		1DD441CD1EE74BE700B39B40 /* ParkingSpotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD441C91EE74BE700B39B40 /* ParkingSpotAnnotation.swift */; };
 		1DD441CE1EE74BE700B39B40 /* ParkingSatelliteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD441CA1EE74BE700B39B40 /* ParkingSatelliteViewController.swift */; };
@@ -63,6 +64,7 @@
 		1D7050A41ED5E11400F906F7 /* Ameren EV HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ameren EV HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7050A81ED5E11400F906F7 /* Ameren_EV_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ameren_EV_HubUITests.swift; sourceTree = "<group>"; };
 		1D7050AA1ED5E11400F906F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBB2ED11EE997A6009EF420 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		1DD441C81EE74BE700B39B40 /* ParkingSpotAnnotationDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingSpotAnnotationDetailView.xib; sourceTree = "<group>"; };
 		1DD441C91EE74BE700B39B40 /* ParkingSpotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSpotAnnotation.swift; sourceTree = "<group>"; };
 		1DD441CA1EE74BE700B39B40 /* ParkingSatelliteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingSatelliteViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				1D7050911ED5E11300F906F7 /* LaunchScreen.storyboard */,
 				1D7050941ED5E11300F906F7 /* Info.plist */,
 				FB0AF7E31ED8B4F500884FCA /* AlertMeViewController.swift */,
+				1DBB2ED11EE997A6009EF420 /* CheckInViewController.swift */,
 			);
 			path = "Ameren EV Hub";
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				1DD441CE1EE74BE700B39B40 /* ParkingSatelliteViewController.swift in Sources */,
 				FB0AF7E41ED8B4F500884FCA /* AlertMeViewController.swift in Sources */,
 				1D7050891ED5E11300F906F7 /* AppDelegate.swift in Sources */,
+				1DBB2ED21EE997A6009EF420 /* CheckInViewController.swift in Sources */,
 				1DD441CD1EE74BE700B39B40 /* ParkingSpotAnnotation.swift in Sources */,
 				FB0AF7DC1ED6099400884FCA /* LoginViewController.swift in Sources */,
 				FB0AF7E01ED886A900884FCA /* NavViewController.swift in Sources */,

@@ -22,12 +22,12 @@ let AMEREN_HQ_LONGITUDE: CLLocationDegrees = -90.2116
 let AMEREN_HQ_LATITUDE_SPAN: CLLocationDegrees = 0.006488 / 4
 let AMEREN_HQ_LONGITUDE_SPAN: CLLocationDegrees = 0.010014 / 4
 
-// Icon size as a proportion of latitude range
-let ICON_LATITUDE_RATIO: Double = 0.02
+// Icon size / latitude range
+let ICON_LATITUDE_RATIO: Double = 0.03
 
 // Icon size minimum and maximum
 let ICON_SIZE_MINIMUM: Double = 5
-let ICON_SIZE_MAXIMUM: Double = 15
+let ICON_SIZE_MAXIMUM: Double = 20
 
 // EV tower state codes
 let TOWER_STATE_IDLE = 1
@@ -45,7 +45,7 @@ class ParkingSatelliteViewController: UIViewController, MKMapViewDelegate {
     // Map subview
     @IBOutlet weak var satelliteMapView: MKMapView!
     
-    // MARK: - Class Variables
+    // MARK: - Instance Variables
     
     // Default map center, span, and region
     var defaultCenter: CLLocationCoordinate2D! = nil

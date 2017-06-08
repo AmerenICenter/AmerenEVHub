@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36AF550CEDFBEE7599B0F1205EF27BE7"
+               BlueprintIdentifier = "2171EB3567B128FEEEAC9B73117632C5"
                BuildableName = "Pods_Ameren_EV_Hub.framework"
                BlueprintName = "Pods-Ameren EV Hub"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "36AF550CEDFBEE7599B0F1205EF27BE7"
+            BlueprintIdentifier = "2171EB3567B128FEEEAC9B73117632C5"
             BuildableName = "Pods_Ameren_EV_Hub.framework"
             BlueprintName = "Pods-Ameren EV Hub"
             ReferencedContainer = "container:Pods.xcodeproj">

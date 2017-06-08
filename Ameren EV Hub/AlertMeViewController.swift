@@ -14,7 +14,7 @@ import FirebaseDatabase
 //  Allows user to register a car to a car charging port
 //  and alerts them when the car is done charging.
 
-class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFieldDelegate, UIPickerViewDelegate {
+class AlertMeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     var ref: FIRDatabaseReference!
     var EVSEForMe: String = ""
@@ -86,19 +86,21 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
         
         if !isInUseFlag && (EVSEForMe != "") {
             isInUseFlag = true
-            refHandle = self.ref.child("EVApp/EVAppData").child(EVSEForMe).observe(FIRDataEventType.value, with: { snap in
-                let state = String(describing: snap.childSnapshot(forPath: "EVSEState").valueInExportFormat()!)
-                if (state == "4") {
-                    //  If the car has charged then stop checking it and call the helper function.
-                    self.pauseTimer()
-                    print("Car is done charging please move it!")
-                    self.ref.child("EVApp/EVAppData").child(self.EVSEForMe).removeObserver(withHandle: self.refHandle)
-                    self.carIsCharged()
-                }
-                else {
-                    print("Car is still charging!")
-                }
-            })
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.addChargingAlert(self.ref, EVSE: EVSEForMe)
+//            refHandle = self.ref.child("EVApp/EVAppData").child(EVSEForMe).observe(FIRDataEventType.value, with: { snap in
+//                let state = String(describing: snap.childSnapshot(forPath: "EVSEState").valueInExportFormat()!)
+//                if (state == "4") {
+//                    //  If the car has charged then stop checking it and call the helper function.
+//                    self.pauseTimer()
+//                    print("Car is done charging please move it!")
+//                    self.ref.child("EVApp/EVAppData").child(self.EVSEForMe).removeObserver(withHandle: self.refHandle)
+//                    self.carIsCharged()
+//                }
+//                else {
+//                    print("Car is still charging!")
+//                }
+//            })
         } else if EVSEForMe == "" {
             print("Please enter a valid ID")
         } else {
@@ -160,6 +162,6 @@ class AlertMeViewController: UIViewController,UIPickerViewDataSource, UITextFiel
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logMeOut(_:)))
-    }// Do any additional setup after loading the view.
+    }
     
 }

@@ -23,7 +23,7 @@ class ParkingSpotAnnotation: NSObject, MKAnnotation {
     var title: String?
     var subtitle: String?
     
-    // MARK: - Class Variables
+    // MARK: - Instance Variables
     
     // Integer ID associated with this parking space
     var spotID: Int

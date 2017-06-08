@@ -60,6 +60,7 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationItem.title = "Reset Password"
         emailTextField.returnKeyType = UIReturnKeyType.go
         emailTextField.textAlignment = NSTextAlignment.center
         emailTextField.delegate = self
